@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dwell – Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2d6a4f 0%, #40916c 55%, #74c69d 100%);
+      color: #fff;
+      padding: 28px 24px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.06) 0%, transparent 50%);
+    }
+
+    header .icon {
+      font-size: 1.6rem;
+      margin-bottom: 6px;
+      display: inline;
+    }
+
+    header h1 {
+      display: inline;
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+      margin-left: 6px;
+    }
+
+    header p {
+      display: block;
+      font-size: 0.8rem;
+      letter-spacing: 0.3px;
+      color: rgba(255,255,255,0.7);
+      margin-top: 6px;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #2d6a4f;
+      margin-bottom: 10px;
+    }
+
+    p { font-size: 0.95rem; color: #444; }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    ul li {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: #eaf7f1;
+      border-left: 4px solid #40916c;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+      color: #1a1a2e;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #999;
+      padding-bottom: 40px;
+    }
+
+    a { color: #2d6a4f; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="icon">🏡</div>
+    <h1>Dwell Privacy Policy</h1>
+    <p>Last updated: March 7, 2026</p>
+  </header>
+
+  <main>
+
+    <div class="highlight">
+      <strong>Short version:</strong> Dwell does not collect, transmit, or share any personal data.
+      Your location history and saved places never leave your device.
+    </div>
+
+    <div class="card">
+      <h2>No Data Collection</h2>
+      <p>
+        Dwell does not collect any personal information. Your saved places, geofences, and
+        visit history are stored entirely on-device in a local SQLite database. Nothing is
+        sent to external servers, and we have no visibility into your data.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Location Access</h2>
+      <p>
+        Dwell requests <strong>Always On</strong> location permission so it can detect when
+        you arrive at and depart from your saved places, even when the app is in the background.
+        Your location is processed entirely on your device using iOS geofencing (CoreLocation).
+        Raw GPS coordinates are never stored — only the time you entered and exited each saved place.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>What the App Stores Locally</h2>
+      <ul>
+        <li>Your saved places (name, address, geofence radius)</li>
+        <li>Visit records (place, entry time, exit time)</li>
+        <li>App settings and preferences</li>
+      </ul>
+      <p style="margin-top: 10px;">
+        All of this data lives only on your device. Deleting the app removes it entirely.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Notifications</h2>
+      <p>
+        Dwell can send local notifications to summarize your time at a place after you leave.
+        These notifications are scheduled on-device by iOS and are never routed through
+        external servers. You can disable them at any time in iOS Settings → Notifications → Dwell.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>No Third-Party SDKs or Analytics</h2>
+      <p>
+        Dwell contains no advertising SDKs, analytics frameworks, crash reporters,
+        or any other third-party code that could collect or transmit data.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>No Account Required</h2>
+      <p>
+        Dwell does not require you to create an account or provide any personal
+        information such as your name, email address, or phone number.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Children's Privacy</h2>
+      <p>
+        Because Dwell collects no data whatsoever, it is safe for users of all ages.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Changes to This Policy</h2>
+      <p>
+        If this privacy policy changes in a future version of the app, the updated
+        policy will be posted at this URL with a revised date at the top.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>
+        Questions? Reach out at <a href="mailto:hello@blueterrain.com">hello@blueterrain.com</a>.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Blue Terrain. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
