@@ -12,15 +12,16 @@
         <div class="container">
             <h1>Privacy Policy</h1>
             <p class="subtitle">Dwell — Your Life's Rhythm</p>
-            <p style="font-size: 14px; color: var(--text-secondary);">Last updated: March 7, 2026</p>
+            <p style="font-size: 14px; color: var(--text-secondary);">Last updated: March 15, 2026</p>
         </div>
     </section>
 
     <div class="container">
         <div class="content compact">
             <div class="highlight">
-                <strong>Short version:</strong> Dwell does not collect, transmit, or share any personal data. 
-                Your location history and saved places never leave your device.
+                <strong>Short version:</strong> Dwell does not collect, transmit, or share any personal data.
+                Your saved places and visit history are stored on your device and, if you choose, backed up
+                to your own private iCloud. We have no server, no account, and no visibility into your data.
             </div>
 
             <div class="card compact">
@@ -45,12 +46,14 @@
             <div class="card compact">
                 <h2>What the App Stores Locally</h2>
                 <ul>
-                    <li>Your saved places (name, address, geofence radius)</li>
-                    <li>Visit records (place, entry time, exit time)</li>
+                    <li>Your saved places (name, coordinates, geofence radius, icon, color)</li>
+                    <li>Visit records (place, arrival time, departure time)</li>
                     <li>App settings and preferences</li>
                 </ul>
                 <p>
-                    All of this data lives only on your device. Deleting the app removes it entirely.
+                    That is the complete list. Step counts, driving durations, and GPS paths are
+                    never written to the database. All stored data lives only on your device.
+                    Deleting the app removes it entirely.
                 </p>
             </div>
 
@@ -60,6 +63,41 @@
                     Dwell can send local notifications to summarize your time at a place after you leave.
                     These notifications are scheduled on-device and are never routed through
                     external servers.
+                </p>
+            </div>
+
+            <div class="card compact">
+                <h2>iCloud Sync (Optional)</h2>
+                <p>
+                    If you enable iCloud Sync in Settings, Dwell backs up its local database to your
+                    <strong>private iCloud ubiquity container</strong>. This container is part of your
+                    personal iCloud storage — it is not accessible to us. The backup travels encrypted
+                    over Apple's infrastructure and is visible only to you and your other devices signed
+                    in to the same Apple ID. iCloud Sync is off by default and can be disabled at any time.
+                </p>
+            </div>
+
+            <div class="card compact">
+                <h2>Apple Health — Step Tracking (Optional)</h2>
+                <p>
+                    If you enable Step Tracking in Settings, Dwell requests <strong>read-only</strong>
+                    access to your step count from Apple Health. Steps are queried live each time you
+                    view a location and displayed on screen. They are never written to Dwell's database,
+                    never cached, and never transmitted anywhere. Dwell does not write any data to
+                    Apple Health. You can revoke access at any time in iOS Settings → Health → Data
+                    Access &amp; Devices → Dwell.
+                </p>
+            </div>
+
+            <div class="card compact">
+                <h2>Motion — Driving Time (Optional)</h2>
+                <p>
+                    If you enable Driving Time in Settings, Dwell queries your device's motion
+                    coprocessor (CoreMotion) to estimate how much of your day was spent driving.
+                    This value is computed entirely on-device, displayed on the Elsewhere card, and
+                    then discarded — it is never written to Dwell's database, never cached, and never
+                    transmitted anywhere. You can revoke access at any time in iOS Settings →
+                    Privacy &amp; Security → Motion &amp; Fitness → Dwell.
                 </p>
             </div>
 
