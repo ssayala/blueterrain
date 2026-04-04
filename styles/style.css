@@ -1,18 +1,72 @@
-body, html {
+:root {
+    --bg: #ffffff;
+    --toggle-color: #000000;
+}
+
+[data-theme="dark"] {
+    --bg: #111111;
+    --toggle-color: #ffffff;
+}
+
+html {
+    height: 100%;
+}
+
+body {
     height: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--bg);
+    transition: background-color 0.3s ease;
 }
 
 img {
-    max-width: 100%; /* Ensures the image is responsive */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
+
+.logo-wrapper {
+    display: grid;
+}
+
+.logo {
+    grid-area: 1 / 1;
+    transition: opacity 0.3s ease;
+}
+
+.logo-dark { opacity: 0; }
+[data-theme="dark"] .logo-light { opacity: 0; }
+[data-theme="dark"] .logo-dark { opacity: 1; }
+
+.theme-toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: var(--toggle-color);
+    opacity: 0.15;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    opacity: 0.6;
+}
+
+.theme-toggle svg {
+    width: 18px;
+    height: 18px;
+}
+
+.icon-sun { display: none; }
+[data-theme="dark"] .icon-moon { display: none; }
+[data-theme="dark"] .icon-sun { display: block; }
