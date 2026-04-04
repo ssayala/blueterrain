@@ -28,15 +28,24 @@ img {
 }
 
 .logo-wrapper {
-    display: grid;
+    display: inline-block;
+    position: relative;
 }
 
 .logo {
-    grid-area: 1 / 1;
+    display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity 0.3s ease;
 }
 
-.logo-dark { opacity: 0; }
+.logo-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
 [data-theme="dark"] .logo-light { opacity: 0; }
 [data-theme="dark"] .logo-dark { opacity: 1; }
 
